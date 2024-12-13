@@ -4,7 +4,7 @@ My - Excercise
 
 ## Live Demo
 
-[View the project here](https://github.com/indraSetiawn/testimonials/)
+[View the project here](https://indrasetiawn.github.io/testimonials/)
 
 ##
 
