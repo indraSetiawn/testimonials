@@ -1,0 +1,226 @@
+:root {
+  --f1: Arial, Helvetica, sans-serif;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  margin: 1.5rem auto;
+  padding: 1rem;
+  border: 2px solid #000;
+  width: 43%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+
+/* Card 1 */
+.card1 {
+  width: 17.1rem;
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 1rem;
+  font-family: var(--f1);
+  font-size: 0.9rem;
+
+}
+
+.card1 .profil,
+.card2 .profil {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.card1 .profil img,
+.card2 .profil img {
+  width: 20%;
+  border-radius: 50px;
+  margin-right: 0.9rem;
+}
+
+
+.card1 .profil .name p:nth-child(1),
+.card2 .profil .name p:nth-child(1) {
+  font-size: 1.2rem;
+}
+
+.card1 .profil .name p:nth-last-child(1),
+.card2 .profil .name p:nth-last-child(1) {
+  font-size: 0.7rem;
+}
+
+/* Card 2 */
+.card2 {
+  width: 16rem;
+  font-family: var(--f1);
+  position: relative;
+}
+
+.message {
+  background-color: #000;
+  color: #fff;
+  border-radius: 15px;
+  padding: 1rem;
+  font-size: 0.9rem;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(-12px);
+  position: relative;
+}
+
+.message:hover
+{
+  transform: translateY(0px);
+}
+
+.card2 .message p:nth-child(2) {
+  margin-top: 0.7rem;
+}
+
+.triangle {
+  background-color: #000;
+  width: 20px;
+  position: absolute;
+  height: 20px;
+  transform: rotate(135deg);
+  z-index: -1;
+  position: absolute;
+  left: 1.5rem;
+  bottom: -0.55rem;
+}
+
+.card2 .profil img {
+  margin-left: 0.6rem;
+}
+
+/* Card 3 */
+.card3 {
+  font-family: var(--f1);
+  
+}
+
+
+
+.row:nth-child(2) img {
+  width: 185px;
+  height: 183px;
+  border-radius: 20px;
+}
+
+.card3 .message {
+  width: 360px;
+}
+
+.message2{
+  background-color: #000;
+  color: #fff;
+  border-radius: 15px;
+  padding: 1rem;
+  transition: all 0.5s ease;
+}
+.message2:hover {
+  transform: translateX(12px);
+}
+
+.card3 .message2 .name span {
+  margin: 0.7rem 0 0.4rem 0;
+  display: block;
+  font-size: 1.1rem;
+}
+
+.card3 .message2 .comment p {
+  margin-top: 1.3rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.85rem;
+}
+
+/* Card 4 */
+.row:nth-child(3) {
+  border: 2px solid #000;
+  padding: 1.7rem;
+  border-radius: 18px;
+  text-align: center;
+  font-family: var(--f1);
+  font-size: 0.89rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.row:nth-child(3) .user {
+  display: flex;
+  justify-content: center;
+  /* background-color: aqua; */
+  width: 100%;
+  height: 50px;
+  margin: 1.6rem auto 0.3rem;
+  align-items: center;
+}
+
+.row:nth-child(3) .user span {
+  display: block;
+  margin: 0 1rem;
+}
+
+
+.row:nth-child(3) .user img:nth-child(3) {
+  width: 14%;
+  border-radius: 50%;
+}
+
+.row:nth-child(3) .user img:nth-child(2),
+.row:nth-child(3) .user img:nth-child(4) {
+  width: 11%;
+  border-radius: 50%;
+  opacity: 0.8;
+  margin: 0 1rem;
+}
+
+@media (max-width: 720px){
+  .html{
+    font-size: 0.6rem;
+  }
+  
+  .hero {
+    width: 100%;
+    margin: 0;
+    border: none;
+    
+  }
+
+  .row:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card1,
+  .card2 {
+    width: 100%;
+  }
+
+  .triangle{
+    left: 2.6rem;
+  }
+
+  .card3 {
+    width: 100%;
+  }
+
+  .message2 {
+    height: 92%;
+  }
+
+  .row:nth-child(3) .user{
+    margin: 0;
+  }
+}
