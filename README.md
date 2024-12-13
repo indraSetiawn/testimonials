@@ -4,7 +4,8 @@ My - Excercise
 
 ## Live Demo
 
-[View the project here](https://indrasetiawn.github.io/basic-html/)
+[View the project here](https://github.com/indraSetiawn/testimonials/)
 
 ##
+
 (https://roadmap.sh/projects/testimonial-cards)
